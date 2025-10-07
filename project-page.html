@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        /* first-main */
+        .first-main {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right-side-bar */
+        .right-sidebar {
+            height: 100%;
+            width: 18%;
+            background-color: rgb(184, 82, 82);
+            position: fixed;
+
+        }
+
+        /* personal-img */
+        .right-center-box {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(200, 211, 200);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* personal-img */
+        .personal-img {
+            height: 22%;
+            width: 70%;
+            background-color: lightcoral;
+            margin-top: 20px;
+            border-radius: 100%;
+            margin-left: 15%;
+        }
+
+        /* personal-text */
+        .personal-text {
+            height: 50%;
+            width: 80%;
+            background-color: rgb(175, 144, 238);
+            margin-left: 10%;
+            margin-top: 40px;
+        }
+
+        /* image */
+        .cyrcle-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+
+        }
+
+        /* big-image */
+        .all-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* personal-text-child */
+        .text {
+            height: 25%;
+            width: 100%;
+
+        }
+
+
+
+        .home {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .about {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .project {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .contact {
+            background-color: rgb(200, 211, 200);
+        }
+
+        /* name */
+        .small-namee {
+            font-size: 25px;
+            font-family: cursive;
+        }
+
+        /* button */
+        .left-side-button {
+            margin-left: 50px;
+            font-size: 30px;
+            font-family: cursive;
+        }
+
+        /* left-side-bar */
+        .left-sidebar {
+            height: 100%;
+            width: 82%;
+            background-color: rgb(255, 243, 216);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 18%;
+
+
+            /* header-one */
+        }
+
+        .header-one {
+            height: 7%;
+            width: 50%;
+            margin-top: 3%;
+            background-color: rgba(255, 255, 0, 0);
+            margin-left: 23%;
+            text-align: center;
+            font-size: 35px;
+            font-family: cursive;
+        }
+
+        /* first-main-center-box */
+        .center-box {
+            height: 80%;
+            width: 80%;
+            background-color: rgba(211, 211, 211, 0);
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-top: 2%;
+            justify-content: space-between;
+        }
+
+        .row {
+            height: 48%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .box {
+            background-color: rgba(92, 124, 204, 0);
+        }
+
+        .boxx {
+            background-color: rgba(235, 150, 38, 0);
+        }
+
+        /* website */
+        .website {
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .one {
+            background-color: rgba(246, 246, 244, 0.552);
+            border: 3px solid rgb(39, 6, 255);
+            animation: mymove 5s infinite;
+            border-radius: 15px;
+        }
+
+        @keyframes mymove {
+            50% {
+                border-color: rgb(255, 0, 0);
+            }
+        }
+
+        .two {
+            background-color: rgba(255, 255, 255, 0.502);
+            border: 3px solid rgb(86, 80, 255);
+            animation: mymove 5s infinite;
+            border-radius: 15px;
+        }
+
+        @keyframes mymove {
+            50% {
+                border-color: rgb(255, 0, 0);
+            }
+        }
+
+        /* child */
+        .image-web {
+            height: 85%;
+            border-radius: 15px;
+            width: 100%;
+            background-color: rgba(255, 0, 0, 0);
+        }
+
+        .text-web {
+            border-radius: 15px;
+            height: 15%;
+            width: 100%;
+            background-color: rgba(236, 229, 229, 0.888);
+        }
+
+        /* all-img */
+        .all-img {
+            height: 90%;
+            margin-left: 5%;
+            margin-top: 3%;
+            width: 90%;
+            border-radius: 15px;
+        }
+        button{
+            height: 70%;
+            width: 40%;
+            border-radius: 15px;
+            margin-left: 30%;
+            margin-top: 5px;
+            background-color: aqua;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-main">
+            <!-- sidebar -->
+            <div class="right-sidebar">
+                <div class="right-center-box">
+                    <div class="personal-img"><img class="cyrcle-img" src="" alt=""></div>
+                    <div class="personal-text">
+
+                        <div class="text home">
+                            <div class="left-side-button"><a href="./index.html#home">Home</a></div>
+                        </div>
+                        <div class="text about">
+                            <div class="left-side-button"><a href="./index.html#about">About</a></div>
+                        </div>
+                        <div class="text project">
+                            <div class="left-side-button"><a href="./index.html#project">Project</a></div>
+                        </div>
+                        <div class="text contact">
+                            <div class="left-side-button"><a href="./index.html#contact">Contact</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- left-box -->
+            <div class="left-sidebar">
+                <div class="header-one">Assignment</div>
+                <!-- main -->
+                <div class="center-box">
+                    <!--child  -->
+                    <div class="row box">
+                        <div class="website one">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/website-one.html"><button>View Project</button></a></div>
+                        </div>
+                        <div class="website two">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/website-two.html"><button>View Project</button></a></div>
+                        </div>
+                    </div>
+                    <!-- child -->
+                    <div class="row boxx">
+                        <div class="website one">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./website/websit-three.html"><button>View Project</button></a></div>
+                        </div>
+                        <div class="website two">
+                            <div class="image-web"><img class="all-img"
+                                    src="https://png.pngtree.com/png-vector/20231223/ourmid/pngtree-project-management-building-up-png-image_10918849.png"
+                                    alt=""></div>
+                            <div class="text-web"><a href="./PORTFOLIO/portfolio.html"><button>View Project</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

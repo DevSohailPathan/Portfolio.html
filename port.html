@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Blue + Golden Neon Portfolio</title>
+  <style>
+    /* Basic styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      background-color: #0a0f29;
+      color: #e0e6ed;
+      cursor: none; /* hide default cursor */
+    }
+
+    /* Animated gradient background */
+    body {
+      background: linear-gradient(-45deg, #0a0f29, #1a254f, #0a0f29, #1a254f);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Cursor glow */
+    .cursor {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      background: rgba(255, 215, 0, 0.7); /* golden glow cursor */
+      box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFD700;
+      transform: translate(-50%, -50%);
+      transition: width 0.15s, height 0.15s, background 0.15s;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 2px solid #2196f3;
+      z-index: 2;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #FFD700; /* golden heading */
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #2196f3;
+    }
+
+    header p {
+      color: #cfd8e3;
+      font-size: 18px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #FFD700; /* golden section title */
+      border-left: 4px solid #FFD700;
+      padding-left: 10px;
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #FFD700, 0 0 10px #2196f3;
+    }
+
+    .card {
+      background: #131a44;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #1a254f;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #2196f3, 0 0 25px #FFD700, 0 0 40px rgba(33, 150, 243, 0.5);
+    }
+
+    button {
+      background: linear-gradient(45deg, #2196f3, #FFD700);
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      color: #0a0f29;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #2196f3, 0 0 15px #FFD700, 0 0 30px rgba(255, 215, 0, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #2196f3;
+      color: #cfd8e3;
+      font-size: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Particles container */
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles background -->
+  <div id="particles-js"></div>
+
+  <!-- Custom glowing cursor -->
+  <div class="cursor" id="cursor"></div>
+
+  <header>
+    <h1>Sohal Pathan</h1>
+    <p>Full Stack Developer | Tech Enthusiast | UI Designer</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I’m a full stack developer who loves creating modern, dark-themed, and responsive websites. My focus is on user-friendly UI with royal blue & golden neon aesthetics.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>My Projects</h2>
+      <div class="card">
+        <p><strong>Portfolio V2:</strong> A modern dark-themed portfolio built with HTML, CSS, and JS with royal blue and golden highlights.</p>
+      </div>
+      <div class="card">
+        <p><strong>Business Website:</strong> Professional site design for corporate clients with clean UI and neon hover effects.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>📧 Email: sohal@example.com</p>
+        <p>📱 Phone: +91 98765 43210</p>
+        <button>Send Message</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Sohal Pathan | Crafted with 💻 in Royal Blue + Golden Neon Theme
+  </footer>
+
+  <!-- Particles.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    /* Initialize particles */
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "color": { "value": ["#2196f3", "#FFD700"] }, /* royal blue & gold */
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": { "enable": true, "distance": 150, "color": "#2196f3", "opacity": 0.4, "width": 1 },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": { "grab": { "distance": 150, "line_linked": { "opacity": 0.7 } }, "push": { "particles_nb": 4 } }
+      },
+      "retina_detect": true
+    });
+
+    /* Custom cursor movement */
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+  </script>
+
+</body>
+</html>

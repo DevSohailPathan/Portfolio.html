@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            overflow-x: hidden;
+        }
+
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+
+        }
+
+        /* first-main */
+        .first-main {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* right-side-bar */
+        .right-sidebar {
+            height: 100%;
+            width: 18%;
+            background-color: rgb(184, 82, 82);
+            position: fixed;
+        }
+
+        /* personal-img */
+        .right-center-box {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(200, 211, 200);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* personal-img */
+        .personal-img {
+            height: 22%;
+            width: 70%;
+            background-color: lightcoral;
+            margin-top: 20px;
+            border-radius: 100%;
+            margin-left: 15%;
+        }
+
+        /* personal-text */
+        .personal-text {
+            height: 40%;
+            width: 80%;
+            background-color: rgb(175, 144, 238);
+            margin-left: 7%;
+            margin-top: 40px;
+        }
+
+        /* image */
+        /* personal-text-child */
+        .text {
+            height: 25%;
+            width: 100%;
+        }
+
+        .home {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .about {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .project {
+            background-color: rgb(200, 211, 200);
+        }
+
+        .contacts {
+            background-color: rgb(200, 211, 200);
+        }
+
+        /* button */
+        .left-side-button {
+            margin-left: 10px;
+            font-size: 30px;
+            opacity: 100%;
+            text-align: center;
+        }
+
+        .left-side-button:hover {
+            background-color: rgb(255, 255, 255);
+          
+        }
+
+        /* left-side-bar */
+        .left-sidebar {
+            height: 100%;
+            width: 82%;
+            background-color: rgb(255, 243, 216);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 18%;
+        }
+
+        /* first-main-center-box */
+        .center-box {
+            height: 40%;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .center-box-one {
+            height: 100%;
+            width: 45%;
+            background-color: yellow;
+        }
+        .center-box-two{
+            height: 100%;
+            width: 45%;
+            background-color: rgba(255, 0, 119, 0.176);
+            text-align: center;
+          
+        }
+        .all-img {
+            height: 100%;
+            width: 100%; 
+        }
+        a{text-decoration: none;
+        color: black;}
+    
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-main" >
+            <!-- sidebar -->
+            <div class="right-sidebar">
+                <div class="right-center-box">
+                    <div class="personal-img"></div>
+                    <div class="personal-text">
+
+                        <div class="text home">
+                            <div class="left-side-button"><a href="./index.html#home">Home</a></div>
+                        </div>
+                        <div class="text about">
+                            <div class="left-side-button"><a href="./index.html#about">About</a></div>
+                        </div>
+                        <div class="text project">
+                            <div class="left-side-button"><a href="./index.html#project">Project</a></div>
+                        </div>
+                        <div class="text contacts">
+                            <div class="left-side-button"><a href="./index.html#contact">Contact</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- left-box -->
+            <div class="left-sidebar">
+                <div class="center-box">
+                    <div class="center-box-one"><img              class="all-img" src="https://img1.wsimg.com/isteam/ip/577c6418-95d8-4526-a539-87102ff9829b/Projects%20Live%20Logo%20lrg-0001.png/:/cr=t:10%25,l:0%25,w:100%25,h:80%25/rs=w:1240,h:620,cg:true" alt=""></div>
+                    <div class="center-box-two"><h1>Cooming Soon !</h1></div>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

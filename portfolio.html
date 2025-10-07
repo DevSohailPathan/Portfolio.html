@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Blue Dark Portfolio</title>
+  <style>
+    /* Animated gradient background */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #0a0f29, #1a254f, #0a0f29, #1a254f);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #e0e6ed;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 2px solid #2196f3;
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #2196f3;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3;
+    }
+
+    header p {
+      color: #cfd8e3;
+      font-size: 18px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: #2196f3;
+      border-left: 4px solid #2196f3;
+      padding-left: 10px;
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 5px #2196f3;
+    }
+
+    .card {
+      background: #131a44;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #1a254f;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #2196f3, 0 0 40px rgba(33, 150, 243, 0.5);
+    }
+
+    button {
+      background: #2196f3;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px #2196f3, 0 0 35px rgba(0, 112, 204, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #2196f3;
+      color: #cfd8e3;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sohal Pathan</h1>
+    <p>Full Stack Developer | Tech Enthusiast | UI Designer</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I’m a full stack developer who loves creating modern, dark-themed, and responsive websites. My focus is on user-friendly UI with royal blue neon aesthetics.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>My Projects</h2>
+      <div class="card">
+        <p><strong>Portfolio V2:</strong> A modern dark-themed portfolio built with HTML, CSS, and JS with neon blue highlights.</p>
+      </div>
+      <div class="card">
+        <p><strong>Business Website:</strong> Professional site design for corporate clients with clean UI and neon hover effects.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>📧 Email: sohal@example.com</p>
+        <p>📱 Phone: +91 98765 43210</p>
+        <button>Send Message</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Sohal Pathan | Crafted with 💻 in Neon Royal Blue Dark Theme
+  </footer>
+
+</body>
+</html>

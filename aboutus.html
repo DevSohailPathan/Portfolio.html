@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intro - Ak Achasa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+    }
+
+    .intro-section {
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+    }
+
+    .intro-content {
+      max-width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .intro-image {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .intro-image img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .intro-text {
+      flex: 2 1 400px;
+    }
+
+    .intro-text h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro-text h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #e0e0e0;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #ddd;
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .intro-section {
+        padding: 2rem 1rem;
+      }
+
+      .intro-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .intro-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .intro-text h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="intro-section">
+    <div class="intro-content">
+      <!-- 👇 Replace image link -->
+      <div class="intro-image">
+        <img src="https://i.imgur.com/0y0y0y0.jpg" alt="Ak Achasa" />
+      </div>
+
+      <div class="intro-text">
+        <h1>Hi, I'm Ak Achasa 👋</h1>
+        <h2>Full Stack Developer | MERN Stack</h2>
+        <p>
+          Passionate about building modern, responsive web applications using the MERN stack.
+          I love turning ideas into reality through clean code and beautiful UI/UX.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
