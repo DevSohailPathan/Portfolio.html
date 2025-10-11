@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Font Awesome CDN -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+/>
+
     <style>
         body {
             margin: 0%;
@@ -16,11 +22,10 @@
         .main-container {
             height: 100vh;
             width: 100vw;
-
         }
 
         /* first-main */
-        .first-main {
+        .page-one {
             height: 100%;
             width: 100%;
             display: flex;
@@ -30,197 +35,246 @@
         /* right-side-bar */
         .right-sidebar {
             height: 100%;
-            width: 17%;
+            width: 18%;
             position: fixed;
         }
 
-        /* personal-img */
+        /* enjoy programing img */
         .right-center-box {
             height: 100%;
             width: 100%;
-            background-color: #030355;
+            background-color: #10316B;
             display: flex;
             flex-direction: column;
-            border: 1px solid white;
+            border: 1px solid rgb(255, 255, 255);
         }
 
-        /* personal-img */
-        .personal-img {
+        /* enjoy-programing--img */
+        .enjoy-programing-img {
             height: 22%;
             width: 70%;
-            background-color: lightcoral;
+            background-color: #0D1282;
             margin-top: 20px;
             border-radius: 100%;
             margin-left: 15%;
         }
 
-        /* personal-text */
-        .personal-text {
-            height: 40%;
+
+        /*navigation-bar */
+        .navigation-bar {
+            height: 37%;
             width: 60%;
-            background-color: rgb(175, 144, 238);
+            background-color: rgb(98, 72, 149);
             margin-left: 15%;
-            margin-top: 38px;
+            margin-top: 25%;
         }
 
         /* image */
-        .cyrcle-img {
+        .enjoy-cyrcle-img {
             height: 100%;
             width: 100%;
             border-radius: 100%;
         }
 
-        /* big-image */
-        .all-img {
-            height: 100%;
-            width: 100%;
-        }
-
-        /* personal-text-child */
-        .text {
+        /* navigation button */
+        .button {
             height: 25%;
             width: 100%;
         }
 
         .png-img-small {
-
             width: 15%;
         }
 
         .home {
-            background-color: #030355;
-
+            background-color: #10316B;
         }
 
         .about {
-            background-color: #030355;
+            background-color: #10316B;
         }
 
         .project {
-            background-color: #030355;
+            background-color: #10316B;
         }
 
         .contacts {
-            background-color: #030355;
+            background-color: #10316B;
         }
 
-        /* name */
-        .small-namee {
-            font-size: 25px;
-            font-family: cursive;
-
-        }
-
-        /* button */
+        /* button manage*/
         .left-side-button {
             margin-left: 10px;
-            font-size: 30px;
+            font-size: 25px;
             opacity: 100%;
             text-align: center;
+
         }
 
+        /* hover */
         .left-side-button:hover {
-            background-color: rgb(195, 149, 9);
+            background-color: #ECDFCC;
             border-radius: 15px;
-            color: rgb(255, 255, 255);
-
         }
 
-        /* left-side-bar */
+        /*-------------- left side bar  ----------- */
         .left-sidebar {
             height: 100%;
-            width: 82%;
-            background-color: #030355;
+            width: 90%;
+            background-color: #10316B;
             display: flex;
             position: relative;
             flex-direction: column;
             left: 18%;
-
         }
 
-        .header-one {
-            height: 200%;
-            width: 85%;
-            font-size: 35px;
-            margin-left: 10%;
-            font-family: cursive;
-            color: white;
-        }
-
-        /* first-main-center-box */
-        .center-box {
-            height: 50%;
-            width: 80%;
+        /* center-box  */
+        .center-box {   
+            height: 70%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             margin-top: 12%;
-            margin-left: 10%;
+            background-color: #053577;
+    
         }
 
-        /* child */
+        /* center box div => 2*/
+        /* center text */
         .center-text {
             height: 100%;
             width: 70%;
-            background-color: #030355;
+            background-color: #ffffff00;
         }
 
-        .namee {
-            font-size: 40px;
-            margin-left: 30px;
-            margin-top: 4%;
-            color: rgb(255, 255, 255);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
-        }
-
-        .nameee {
-            font-size: 40px;
-            margin-left: 30px;
-            margin-top: 4%;
-            font-family: cursive;
-            color: rgb(255, 187, 0);
-
-        }
-
-        .small-name {
-            font-size: 30px;
-            margin-left: 90px;
-            color: rgb(255, 255, 255);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        .paragraph {
-            font-size: 25px;
-            margin-top: 12%;
-            margin-left: 5%;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: white;
-        }
-
-        .center-img {
+        .all-img {
             height: 100%;
-            width: 30%;
-            background-color: rgb(216, 155, 144);
-
+            width: 100%;
         }
 
-        /* second-page */
-        .second-main {
-            height: 60%;
+        /* developer name */
+        .hello-name {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #ffffff;
+            font-family: Calibri;
+        }
+
+        .my-name {
+            font-size: 30px;
+            color: #ffca1b;
+            font-family: cursive;
+        }
+
+        .developer-text {
+            font-size: 22px;
+            margin-left: 59px;
+            color: #ffffff;
+            font-family: Calibri;
+        }
+
+        /* developer-text-big */
+        .my-text {
+            font-size: 22px;
+            margin-top: 4.5%;
+            margin-left: 20px;
+            font-family: Calibri;
+            color: #ffffff;
+            line-height: 39px;
+        }
+
+        /* developer-img */
+        .My-img {
+            height: 75%;
+            width: 35%;
+            background-color: rgb(216, 155, 144);
+            border-radius: 15px;
+            margin-top: 1%;
+            margin-right: 5%;
+            box-shadow: 1px 2px 19px 1px rgb(21, 0, 255);
+        }
+
+        .developer-img-H-W {
+            height: 100%;
             width: 100%;
-            background-color: #030355;
+            border-radius: 15px;
+        }
+
+
+        /* experiance */
+        .experiance {
+            height: 30%;
+            width: 70%;
+            background-color: yellow;
+            margin-top: 38px;
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+        }
+
+        /* child */
+        .html {
+            height: 100%;
+            width: 33%;
+        }
+
+        .ek {
+            background-color: #cedced;
+        }
+
+        .don {
+            background-color: #a2b8d2;
+            width: 34%;
+        }
+
+        .teen {
+            background-color: #127dff;
+        }
+
+        /* img */
+        .very-small-img {
+            height: 8%;
+            width: 30%;
+
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .small-img-section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: 20px;
+        }
+
+        .small-img {
+            height: 75%;
+            width: 18%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 100%;
+        }
+
+        /* ----------about us page----------- */
+        .second-page {
+            height: 70%;
+            width: 100%;
+            background-color: #ffffff;
             display: flex;
             flex-direction: row;
         }
 
-        .second-box-one {
+        /* right sidebar */
+        .right-sidebar-second {
             height: 100%;
             width: 18%;
-            background-color: rgb(255, 255, 255);
+            background-color: #ffffff;
         }
 
-        .second-box-two {
+        /* left-side-bar */
+        .left-sidebar-second {
             height: 100%;
             width: 82%;
             text-align: center;
@@ -228,29 +282,105 @@
             flex-direction: column;
         }
 
+        /* header */
         .second-header {
-            height: 15%;
-            width: 100%;
+            height: 10%;
+            width: 80%;
             font-size: 30px;
-            color: white;
+            color: rgb(0, 0, 0);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 10%;
         }
 
+        /* about us */
         .about-us {
-            height: 90%;
+            height: 30%;
             width: 100%;
             font-size: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
+            margin-top: 20px;
+            color: #000000;
+            background-color: #ffffff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 35px;
-
         }
 
-        /* third-page */
-        .third-main {
+        /* rsume */
+        .resume {
+            height: 10%;
+            width: 40%;
+            background-color: #c2cbd500;
+            margin-left: 30%;
+        }
+
+        .resume-button {
+            height: 35px;
+            width: 110px;
+            border-radius: 7px;
+            font-size: 18px;
+            margin-left: 20px;
+            border: none;
+            color: #000000;
+            background-color: #ea8c00;
+        }
+
+        .resume-contact-button {
+            height: 35px;
+            width: 95px;
+            border-radius: 7px;
+            font-size: 18px;
+            margin-left: 20px;
+            border: none;
+            color: #000000;
+            background-color: #1dd501;
+        }
+
+        /* my skill */
+        .my-skill {
+            height: 50%;
+            width: 100%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* my skill card */
+        .my {
+            height: 80%;
+            width: 25%;
+            border-radius: 15px;
+        }
+
+        .skill-card-one {
+            background-color: #053577;
+        }
+
+        .skill-card-two {
+            background-color: #053577;
+        }
+
+        .skill-card-three {
+            background-color: #053577;
+        }
+
+        /* skill img */
+        .skill-img {
+            height: 25%;
+            margin-top: 5%;
+            width: 20%;
+        }
+
+        h3 {
+            color: white;
+        }
+
+        h4 {
+            color: white;
+        }
+
+        /* --------------project-page --------page three----*/
+        .project-main {
             height: 20%;
             width: 100%;
             background-color: rgb(221, 128, 240);
@@ -258,114 +388,69 @@
             flex-direction: row;
         }
 
+        /* navigation */
         .third-box-one {
             height: 100%;
             width: 18%;
             background-color: rgb(255, 255, 255);
         }
 
+        /* cards page */
         .third-box-two {
             height: 100%;
             width: 82%;
-            background-color: rgb(93, 46, 106);
+            background-color: #ffffff;
             text-align: center;
         }
 
         /* third-header */
         .third-header {
             height: 40%;
-            width: 100%;
-            background-color: rgb(214, 212, 212);
+            width: 50%;
+            background-color: #ffffff;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 30px;
-            color: #050564;
+            color: navy;
+            margin-left: 25%;
         }
 
-        /* button-row */
+        /* button-row all / project  */
         .button-row {
             height: 70%;
             width: 100%;
-            background-color: rgb(214, 212, 212);
-
+            background-color: #ffffff;
         }
 
+        /* buttons all  */
         .buttons {
             margin-top: 25px;
             margin-left: 25px;
             height: 39%;
-            width: 12%;
-            font-size: 15px;
+            width: 13%;
+            font-size: 20px;
             border-radius: 12px;
-            background-color: #050564;
-            opacity: 100%;
-            color: rgb(255, 255, 255);
+            background-color: rgb(255, 219, 17);
+            color: navy;
+            border: 1px solid rgb(21, 0, 107);
         }
 
-
-
-        .buttons:hover {
-            background-color: rgb(223, 163, 21);
-        }
-
-        /* third-box-three */
-        .third-box-three {
-            height: 75%;
-            width: 100%;
-            background-color: rgb(197, 232, 242);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            justify-content: space-evenly;
-
-        }
-
-        .third-three-one {
-            height: 80%;
-            width: 30%;
-            background-color: rgb(222, 222, 171);
-        }
-
-        .third-three-two {
-            height: 80%;
-            width: 30%;
-            background-color: rgb(186, 144, 200);
-        }
-
-        .third-three-three {
-            height: 80%;
-            width: 30%;
-            background-color: rgb(241, 187, 187);
-        }
-
-        /* teenok child 1 */
-        .card-header {
-            height: 70%;
-            width: 100%;
-            background-color: #9511ec;
-        }
-
-        .card-footer {
-            height: 30%;
-            width: 100%;
-            background-color: #9f1d1d;
-        }
-
-        /* fourth-page */
+        /* fourth cards page */
         .fourth-main {
             height: 90%;
             width: 100%;
-            background-color: rgb(0, 0, 0);
+            background-color: #ffffff;
             display: flex;
             flex-direction: row;
-
         }
 
+        /* navigation bar */
         .fourth-box-one {
             height: 100%;
             width: 18%;
             background-color: rgb(255, 255, 255);
         }
+
+        /* left side bar */
 
         .fourth-box-two {
             height: 100%;
@@ -373,18 +458,16 @@
             background-color: rgb(93, 46, 106);
             display: flex;
             flex-direction: column;
-
         }
 
         .fourth-row-one {
             height: 100%;
             width: 100%;
-            background-color: rgb(16, 5, 102);
+            background-color: #f6f6f6;
             display: flex;
             flex-direction: row;
             justify-content: center;
             justify-content: space-evenly;
-
         }
 
         .fourth-four-one {
@@ -392,12 +475,6 @@
             width: 25%;
             background-color: rgb(0, 26, 255);
             margin-top: 3%;
-            transition: transform 0.8s, box-shadow 0.8s;
-        }
-
-        .fourth-four-one:hover {
-            transform: scale(1.1);
-
         }
 
         .fourth-four-two {
@@ -405,12 +482,6 @@
             width: 25%;
             background-color: rgb(187, 0, 249);
             margin-top: 3%;
-            transition: transform 0.8s, box-shadow 0.8s;
-        }
-
-        .fourth-four-two:hover {
-            transform: scale(1.1);
-
         }
 
         .fourth-four-three {
@@ -418,24 +489,24 @@
             width: 25%;
             background-color: rgb(241, 187, 187);
             margin-top: 3%;
-            transition: transform 0.8s, box-shadow 0.8s;
-        }
-
-        .fourth-four-three:hover {
-            transform: scale(1.1);
-
         }
 
         .fourth-card-header {
             height: 80%;
             width: 100%;
             background-color: rgb(255, 255, 255);
+            transition: transform 0.9s, box-shadow 0.8s;
+        }
+
+        .fourth-card-header:hover {
+            transform: scale(1.1);
+
         }
 
         .fourth-card-footer {
             height: 20%;
             width: 100%;
-            background-color: rgb(0, 0, 0);
+            background-color: #a2b8d2;
         }
 
         /*  */
@@ -452,22 +523,23 @@
         }
 
         .view-button {
-            background-color: rgb(255, 187, 0);
+            background-color: #3B577D;
             height: 60%;
             border-radius: 15px;
             width: 35%;
             border: none;
             margin-left: 33%;
             margin-top: 3%;
-        }
+            color: white;
 
+        }
 
         /* fifth page */
 
         .fifth-main {
-            height: 100%;
+            height: 60%;
             width: 100%;
-            background-color: lightsalmon;
+            background-color: rgb(255, 255, 255);
             display: flex;
             flex-direction: row;
         }
@@ -475,27 +547,24 @@
         .fifth-box-one {
             height: 100%;
             width: 18%;
-            background-color: #050564;
+            background-color: #000000;
         }
 
         .fifth-box-two {
             height: 100%;
             width: 82%;
-            background-color: #050564;
-
-
+            background-color: #00000023;
         }
 
         .contact-header {
             height: 7%;
             width: 70%;
-            background-color: #050564;
+            background-color: #00000000;
             margin-top: 3%;
             margin-left: 15%;
             text-align: center;
             font-size: 30px;
-            color: white;
-            box-shadow: 2px 1px 5px 5px blue;
+            color: rgb(1, 6, 74);
         }
 
         /* child */
@@ -509,154 +578,157 @@
         .onee {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
-            margin-top: 4%;
-        }
-
-        .twoo {
-            display: flex;
-            flex-direction: row;
             justify-content: space-evenly;
-            margin-top: 4%;
+            margin-top: 9%;
         }
 
         /* contact box */
         .contact {
-            height: 80%;
-            width: 25%;
-
-
+            height: 85%;
+            width: 17%;
         }
 
+        /* address */
         .address {
-            background-color: rgb(0, 0, 0);
+            background-color: #10316B;
             display: flex;
             flex-direction: column;
             transition-duration: 0.4s;
             transition: 0.8s, transform 0.8s;
             border-radius: 15px;
-
+            border: 1px solid rgb(0, 0, 0);
         }
 
         /* address hover */
         .address:hover {
-
             transform: scale(1.1);
-            box-shadow: 0 0 15px #2200ff, 0 0 20px rgba(4, 0, 255, 0.5);
+            box-shadow: 0 0 15px #1500ff, 0 0 20px rgb(51, 0, 255);
         }
 
+        /* email */
         .email {
-            background-color: rgb(0, 0, 0);
+            background-color: #10316B;
             display: flex;
             flex-direction: column;
             transition-duration: 0.4s;
             transition: 0.8s, transform 0.8s;
             border-radius: 15px;
-
+            border: 1px solid rgb(0, 0, 0);
         }
 
         /* email hover */
         .email:hover {
-
             transform: scale(1.1);
-            box-shadow: 0 0 15px #2200ff, 0 0 20px rgba(4, 0, 255, 0.5);
+            box-shadow: 0 0 15px #1500ff, 0 0 20px rgb(51, 0, 255);
         }
 
+        /* phone */
         .phone {
-            background-color: rgb(0, 0, 0);
+            background-color: #10316B;
             display: flex;
             transition-duration: 0.4s;
             flex-direction: column;
             transition: 0.8s, transform 0.8s;
             border-radius: 15px;
-
+            border: 1px solid rgb(0, 0, 0);
         }
 
         /* phone hover */
         .phone:hover {
-
             transform: scale(1.1);
-            box-shadow: 0 0 15px #2200ff, 0 0 20px rgba(4, 0, 255, 0.5);
+            box-shadow: 0 0 15px #1500ff, 0 0 20px rgb(51, 0, 255);
         }
 
+        /* linkdein */
         .linkdein {
-            background-color: rgb(0, 0, 0);
-            display: flex;
+            background-color: #10316B;
             flex-direction: column;
             transition-duration: 0.4s;
+            border: 1px solid rgb(0, 0, 0);
             transition: 0.8s, transform 0.8s;
             border-radius: 15px;
-
         }
 
         /* linkdein hover */
         .linkdein:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 15px #2200ff, 0 0 20px rgba(4, 0, 255, 0.5);
+            box-shadow: 0 0 15px #1500ff, 0 0 20px rgb(51, 0, 255);
         }
 
+        /* gethub */
         .gethub {
-            background-color: rgb(0, 0, 0);
+            background-color: #10316B;
             display: flex;
+            border: 1px solid rgb(0, 0, 0);
             flex-direction: column;
             transition-duration: 0.4s;
             transition: 0.8s, transform 0.8s;
             border-radius: 15px;
-
         }
 
         /* gethub hover */
         .gethub:hover {
-
             transform: scale(1.1);
-            box-shadow: 0 0 15px #2200ff, 0 0 20px rgba(4, 0, 255, 0.5);
+            box-shadow: 0 0 15px #1500ff, 0 0 20px rgb(51, 0, 255);
         }
 
         /* contact page img & text */
         .c-image {
             height: 50%;
             width: 100%;
-            background-color: #000000;
+            background-color: #10316B;
             text-align: center;
             border-radius: 15px;
-
         }
 
+        /* contact page text */
         .c-text {
             height: 50%;
             width: 100%;
-            background-color: #000000;
+            background-color: #10316B;
             border-radius: 15px;
-
         }
 
+        /* contact img h w */
         .contact-img {
-            height: 39%;
+            height: 42%;
             width: 15%;
-            margin-top: 10%;
+            margin-top: 2%;
             border-radius: 15px;
-
-
         }
 
         /* top name */
         .top {
             text-align: center;
-            font-size: 17px;
-            color: white;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
         }
 
         .bottom {
             text-align: center;
-            font-size: 20px;
-            color: white;
+            font-size: 17px;
+            color: rgb(255, 255, 255);
         }
 
         a {
             text-decoration: none;
-            color: rgb(255, 255, 255);
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            font-family: Calibri;
         }
+
+        /* footer */
+        .fifth-row-three {
+            height: 5%;
+            width: 50%;
+            background-color: #ffffff00;
+            margin-top: 5%;
+            margin-left: 25%;
+            color: rgb(5, 23, 138);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        @media (min-width:300px)and (max-width:450px) {}
     </style>
 </head>
 
@@ -664,127 +736,171 @@
     <!-- first page -->
     <!-- main-container -->
     <div class="main-container">
-        <div class="first-main" id="home">
+        <div class="page-one" id="home">
             <!-- sidebar -->
             <div class="right-sidebar">
                 <div class="right-center-box">
-                    <div class="personal-img"><img class="cyrcle-img"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97ZJnFL8xnPQVMuPDkWiLMlsBKOWDpHMq7w&s"
-                            alt=""></div>
-                    <div class="personal-text">
-
-                        <div class="text home">
+                    <div class="enjoy-programing-img"><img class="enjoy-cyrcle-img"
+                            src="https://pbs.twimg.com/profile_images/1829166084626210816/c6sR7XYC_400x400.png" alt="">
+                    </div>
+                    <!-- navigation bar -->
+                    <div class="navigation-bar">
+                        <div class="button home">
                             <div class="left-side-button"><span><img class="png-img-small"
-                                        src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png"
+                                        src="https://freepngimg.com/download/united_states/76191-information-united-business-house-states-address-white.png"
                                         alt=""></span> <span><a href="#home">Home</a></span></div>
                         </div>
-                        <div class="text about">
+                        <div class="button  about">
                             <div class="left-side-button"><span><img class="png-img-small"
                                         src="https://img.icons8.com/ios_filled/512w/FFFFFF/about-me.png" alt=""></span>
                                 <span><a href="#about">About</a></span>
                             </div>
                         </div>
-                        <div class="text project">
+                        <div class="button  project">
                             <div class="left-side-button"><span><img class="png-img-small"
-                                        src="data:image/png;base64,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"
+                                        src="https://img.icons8.com/fluent-systems-filled/512w/FFFFFF/portfolio.png"
                                         alt=""></span> <span><a href="#project">Project</a></span></div>
                         </div>
-                        <div class="text contacts">
+                        <div class="button  contacts">
                             <div class="left-side-button"><span><img class="png-img-small"
-                                        src="https://img.icons8.com/win10/512/FFFFFF/contacts.png" alt=""></span>
+                                        src="https://static.vecteezy.com/system/resources/previews/055/780/415/non_2x/a-white-phone-icon-on-a-black-background-free-png.png"
+                                        alt=""></span>
                                 <span><a href="#contact">Contact</a></span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <!-- left-box -->
             <div class="left-sidebar">
-                <pre>  <div class="header-one">Arsalan Khan                                                                  Portfolio</div></pre>
+                <!-- center-box -->
                 <div class="center-box">
-
                     <!-- center-child -->
                     <div class="center-text">
-                        <div class="namee">Hello, I'm <span class="nameee">Arsalan Pathan</span> <br></div>
-                        <div class="small-name">I'm a Full Stack Developer</div>
-                        <div class="paragraph"> I am a Full Stack Developer <br>student. I have completed HTML and
-                            <br>CSS, which help in creating and designing web pages.
+                        <div class="hello-name ">Hello, I'm <span class="my-name">Arsalan Pathan</span><br></div>
+                        <div class="developer-text">I'm a Full Stack Developer</div>
+                        <div class="my-text"> I am a Full Stack Developer <br>student. I have completed HTML and
+                            <br>CSS, which help in creating and designing web pages. <br>
+                        </div>
+
+                        <!-- experianxe bar -->
+                        <div class="experiance">
+                            <div class="html ek"></div>
+                            <div class="html don"></div>
+                            <div class="html teen"></div>
+
+                        </div>
+                        <div class="very-small-img">
+                            <!-- small img -->
+                            <div class="small-img-section"><img class="small-img"
+                                    src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-envelope-line-white-icon.png"
+                                    alt=""><img class="small-img"
+                                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png "
+                                    alt=""><img class="small-img"
+                                    src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
+                                    alt=""></div>
                         </div>
                     </div>
-                    <div class="center-img"><img class="all-img"
+
+                    <!-- My-img -->
+                    <div class="My-img"><img class="developer-img-H-W"
                             src="https://www.shutterstock.com/image-vector/businessman-icon-260nw-564112600.jpg" alt="">
                     </div>
+                    <!-- experiance -->
+
+
                 </div>
+
+
+
             </div>
         </div>
-        <input type="text">
-        <!-- second-page -->
-        <div class="second-main">
-            <div class="second-box-one" id="about"></div>
-            <div class="second-box-two">
-                <div class="second-header">About Us</div>
-                <div class="about-us">I am Arsalan Pathan Full Stack Developer trainee. I have <br> completed learning
+        <!-- about us page -->
+        <div class="second-page">
+            <!-- navigation-bar -->
+            <div class="right-sidebar-second" id="about"></div>
+            <!-- left sidebar -->
+            <div class="left-sidebar-second">
+                <!-- second-header -->
+                <div class="second-header">About Us
+                    <hr>
+                </div>
+                <!-- about-us -->
+                <div class="about-us">I am Arsalan Pathan Full Stack Developer trainee I have completed<br> learning
                     HTML
-                    and CSS, which are the basic building <br> blocks of web development. HTML helps me create the
+                    and CSS, which are the basic building blocks of web<br> development. HTML helps me create the
                     structure
-                    of<br> web pages, and CSS helps me style and design them to look attractive and <br> user-friendly.
-                    Now, I am
-                    moving forward to learn more advanced languages and <br> technologies to build complete websites and
-                    web
-                    applications. My goal is to become a <br> skilled Full Stack Developer who can handle both frontend
-                    and
-                    backend development.</div>
-            </div>
-
-
-        </div>
-        <!-- third-page  -->
-        <div class="third-main">
-            <div class="third-box-one"></div>
-            <div class="third-box-two">
-                <!-- header -->
-                <div class="third-header" id="project">My Project</div>
-                <!-- button -->
-                <div class="button-row"><button class="buttons">All</button><a href="./project-page.html"><button
-                            class="buttons">Live Project</button></a><button class="buttons"><a
-                            href="./live-project.html">Design
-                            Project</a></button></div>
-                <!-- card -->
-            </div>
-
-        </div>
-        <!-- -------------project--------------- -->
-        <!-- page-four -->
-        <div class="fourth-main">
-            <div class="fourth-box-one"></div>
-            <div class="fourth-box-two">
-                <div class="four-row-one">
-                    <!-- first -->
-                    <div class="fourth-row-one">
-                        <div class=" fourth-four-one ">
-
-                            <div class="fourth-card-header"><img class="all-img"
-                                    src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
-                                    alt=""></div>
-                            <div class="fourth-card-footer"><button class="view-button">View Project</button></div>
-                        </div>
-                        <!-- second -->
-                        <div class=" fourth-four-two ">
-                            <div class="fourth-card-header"><img class="all-img"
-                                    src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
-                                    alt=""></div>
-                            <div class="fourth-card-footer"><button class="view-button">View Project</button></div>
-                        </div>
-                        <!-- third -->
-                        <div class=" fourth-four-three">
-                            <div class="fourth-card-header"><img class="all-img"
-                                    src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
-                                    alt=""></div>
-                            <div class=" fourth-card-footer"><button class="view-button"> View Project</button></div>
-                        </div>
+                    of web pages and<br> CSS helps me style and design them to look attractive and user-friendly.
+                </div>
+                <div class="resume"> <button class="resume-button"> 🌟Resume</button> <button
+                        class="resume-contact-button">Contact</button></div>
+                <!-- my skill -->
+                <div class="my-skill">
+                    <div class=" my skill-card-one"><span><img class="skill-img"
+                                src="https://www.freeiconspng.com/thumbs/html5-icon/html5-icon-2.png" alt=""></span><br>
+                        <h3><b>HTML 5</b></h3>
+                    </div>
+                    <div class=" my skill-card-two"><span><img class="skill-img"
+                                src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt=""></span>
+                        <h3><b>CSS 3</b></h3>
+                        <h4>Flexbox/Grid,animation, <br>responsicve layout</h4>
+                    </div>
+                    <div class=" my skill-card-three"><span><img class="skill-img"
+                                src="https://i.pinimg.com/736x/40/0f/22/400f22ce6f755ac476eb06c4cb45395c.jpg"
+                                alt=""></span>
+                        <h3><b>JS</b></h3>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- project-page --------page three -->
+        <div class="project-main">
+            <!-- navigation bar -->
+            <div class="third-box-one"></div>
+            <!-- cards page -->
+            <div class="third-box-two">
+                <!-- header -->
+                <div class="third-header" id="project">My Project
+                    <hr>
+                </div>
+                <!--  all / project button -->
+                <div class="button-row"><button class="buttons">All</button><a href="./project-page.html"><button
+                            class="buttons">Assigment</button></a><a href="./live-project.html"><button class="buttons">
+                            live Project</button></a></div>
+            </div>
+        </div>
+        <!-- -------------project page page four--------------- -->
+        <!-- page-four -->
+        <div class="fourth-main">
+            <!-- navigation -->
+            <div class="fourth-box-one"></div>
+            <!-- left side bar -->
+            <div class="fourth-box-two">
+
+                <!-- first card-->
+                <div class="fourth-row-one">
+                    <div class=" fourth-four-one ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
+                                alt=""></div>
+                        <div class="fourth-card-footer"><button class="view-button">View Project</button></div>
+                    </div>
+                    <!-- second -->
+                    <div class=" fourth-four-two ">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
+                                alt=""></div>
+                        <div class="fourth-card-footer"><button class="view-button">View Project</button></div>
+                    </div>
+                    <!-- third -->
+                    <div class=" fourth-four-three">
+                        <div class="fourth-card-header"><img class="all-img"
+                                src="https://play-lh.googleusercontent.com/MPDzYIvnXkFgILeyVYa1ZrBhWrQI6voJQ83R3TGhUvU4jjcV3ClQVlhuWDucmSkSwqc=w240-h480-rw"
+                                alt=""></div>
+                        <div class=" fourth-card-footer"><button class="view-button"> View Project</button></div>
+                    </div>
+                </div>
+
                 <div class="four-row-two">
                     <div class="fourth-row-one">
                         <!-- card-child -->
@@ -812,8 +928,11 @@
                 </div>
             </div>
         </div>
+        <!-- fourth project page -->
         <div class="fourth-main">
+            <!-- navigation -->
             <div class="fourth-box-one"></div>
+            <!-- left box -->
             <div class="fourth-box-two">
                 <div class="four-row-one">
                     <!-- first -->
@@ -863,7 +982,7 @@
                             <div class="fourth-card-header"><img class="all-img"
                                     src="https://play-lh.googleusercontent.com/TxjQBGYHvMJsBX5dCvxQ4R-_4N-XrVhW6-p7D7TXanXKZMD8L-UkeMBWO1dtubGVNqU"
                                     alt=""></div>
-                            <div class=" fourth-card-footer"><button class="view-button">Cricket Page</button></div>
+                            <div class=" fourth-card-footer"><button class="view-button">View Project</button></div>
                         </div>
                     </div>
                 </div>
@@ -871,67 +990,71 @@
         </div>
         <!-- -------contact section------------- -->
         <div class="fifth-main">
+            <!-- navigation bar -->
             <div class="fifth-box-one"></div>
+            <!-- left box -->
             <div class="fifth-box-two">
                 <!-- contact header -->
-                <div class="contact-header" id="contact">Contact Us</div>
+                <div class="contact-header" id="contact">Contact Us
+                    <hr>
+                </div>
+                <!-- fifth row one -->
                 <div class="fifth-row onee">
+                    <!-- address -->
                     <div class="contact address">
                         <div class="c-image"><img class="contact-img"
                                 src="https://freepngimg.com/download/united_states/76191-information-united-business-house-states-address-white.png"
                                 alt=""></div>
                         <div class="c-text">
-                            <div class="top">Address</div><br>
+                            <div class="top">Address</div>
                             <div class="bottom">Nagpur,India</div>
                         </div>
                     </div>
+                    <!-- email -->
                     <div class="contact email">
                         <div class="c-image"><img class="contact-img"
                                 src="https://img.icons8.com/win10/512/FFFFFF/contacts.png" alt=""></div>
                         <div class="c-text">
-                            <div class="top">Contact</div><br>
+                            <div class="top">Contact</div>
                             <div class="bottom">+ (91) 9370390348 </div>
                         </div>
                     </div>
+                    <!-- phone -->
                     <div class="contact phone">
                         <div class="c-image"><img class="contact-img"
                                 src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/email-envelope-line-white-icon.png"
                                 alt=""></div>
                         <div class="c-text">
-                            <div class="top">Email</div><br>
+                            <div class="top">Email</div>
                             <div class="bottom">pathansohal68@gmail.com</div>
                         </div>
                     </div>
-                </div>
-                <div class="fifth-row twoo">
+                    <!-- gethub -->
                     <div class="contact gethub">
                         <div class="c-image"><img class="contact-img"
                                 src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/github-white-icon.png"
                                 alt=""></div>
                         <div class="c-text">
-                            <div class="top">Github</div><br>
+                            <div class="top">Github</div>
                             <div class="bottom">View Github Profile</div>
                         </div>
                     </div>
+                    <!-- linkdein -->
                     <div class="contact linkdein">
                         <div class="c-image"><img class="contact-img"
                                 src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png"
                                 alt=""></div>
                         <div class="c-text">
-                            <div class="top">linkedin</div><br>
+                            <div class="top">linkedin</div>
                             <div class="bottom">Conect to linkdin</div>
                         </div>
                     </div>
                 </div>
 
+                <div class="fifth-row-three">@ Arsalan AyyubKhan Pathan <br>2025 !</div>
             </div>
-
-
         </div>
-
-
     </div>
-
 </body>
 
 </html>

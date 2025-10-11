@@ -31,7 +31,7 @@
         /* right-side-bar */
         .right-sidebar {
             height: 100%;
-            width: 18%;
+            width: 17.79%;
             background-color: rgb(184, 82, 82);
             position: fixed;
         }
@@ -40,16 +40,17 @@
         .right-center-box {
             height: 100%;
             width: 100%;
-            background-color: rgb(200, 211, 200);
+            background-color: #050564;
             display: flex;
             flex-direction: column;
+            border: 1px solid white;
         }
 
         /* personal-img */
         .personal-img {
             height: 22%;
             width: 70%;
-            background-color: lightcoral;
+            background-color: #050564;
             margin-top: 20px;
             border-radius: 100%;
             margin-left: 15%;
@@ -57,10 +58,10 @@
 
         /* personal-text */
         .personal-text {
-            height: 40%;
+            height: 35%;
             width: 80%;
             background-color: rgb(175, 144, 238);
-            margin-left: 7%;
+            margin-left: 5%;
             margin-top: 40px;
         }
 
@@ -72,19 +73,19 @@
         }
 
         .home {
-            background-color: rgb(200, 211, 200);
+            background-color: #050564;
         }
 
         .about {
-            background-color: rgb(200, 211, 200);
+            background-color: #050564;
         }
 
         .project {
-            background-color: rgb(200, 211, 200);
+            background-color: #050564;
         }
 
         .contacts {
-            background-color: rgb(200, 211, 200);
+            background-color: #050564;
         }
 
         /* button */
@@ -96,15 +97,17 @@
         }
 
         .left-side-button:hover {
-            background-color: rgb(255, 255, 255);
-          
+            background-color: rgb(224, 175, 39);
+            border-radius: 15px;
+
+
         }
 
         /* left-side-bar */
         .left-sidebar {
             height: 100%;
             width: 82%;
-            background-color: rgb(255, 243, 216);
+            background-color: #050564;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -125,31 +128,47 @@
             height: 100%;
             width: 45%;
             background-color: yellow;
+            transition-duration: 0.1s;
+            transition: 0.8s, transform 0.8s;
         }
-        .center-box-two{
+
+        .center-box-one :hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        .center-box-two {
             height: 100%;
             width: 45%;
-            background-color: rgba(255, 0, 119, 0.176);
+            background-color: rgba(0, 0, 0, 0.361);
             text-align: center;
-          
+            color: white;
+
         }
+
         .all-img {
             height: 100%;
-            width: 100%; 
+            width: 100%;
         }
-        a{text-decoration: none;
-        color: black;}
-    
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        mark{
+            background-color: gold;
+            border-radius: 15px;
+        }
     </style>
 </head>
 
 <body>
     <div class="main-container">
-        <div class="first-main" >
+        <div class="first-main">
             <!-- sidebar -->
             <div class="right-sidebar">
                 <div class="right-center-box">
-                    <div class="personal-img"></div>
+                    <div class="personal-img"><img class="all-img" src="https://pbs.twimg.com/profile_images/1829166084626210816/c6sR7XYC_400x400.png" alt=""></div>
                     <div class="personal-text">
 
                         <div class="text home">
@@ -159,7 +178,7 @@
                             <div class="left-side-button"><a href="./index.html#about">About</a></div>
                         </div>
                         <div class="text project">
-                            <div class="left-side-button"><a href="./index.html#project">Project</a></div>
+                            <div class="left-side-button"><a href="./index.html#project"><mark>Project</mark></a></div>
                         </div>
                         <div class="text contacts">
                             <div class="left-side-button"><a href="./index.html#contact">Contact</a></div>
@@ -171,8 +190,12 @@
             <!-- left-box -->
             <div class="left-sidebar">
                 <div class="center-box">
-                    <div class="center-box-one"><img              class="all-img" src="https://img1.wsimg.com/isteam/ip/577c6418-95d8-4526-a539-87102ff9829b/Projects%20Live%20Logo%20lrg-0001.png/:/cr=t:10%25,l:0%25,w:100%25,h:80%25/rs=w:1240,h:620,cg:true" alt=""></div>
-                    <div class="center-box-two"><h1>Cooming Soon !</h1></div>
+                    <div class="center-box-one"><img class="all-img"
+                            src="https://img1.wsimg.com/isteam/ip/577c6418-95d8-4526-a539-87102ff9829b/Projects%20Live%20Logo%20lrg-0001.png/:/cr=t:10%25,l:0%25,w:100%25,h:80%25/rs=w:1240,h:620,cg:true"
+                            alt=""></div>
+                    <div class="center-box-two">
+                        <h1>Cooming Soon !</h1>
+                    </div>
 
                 </div>
             </div>
